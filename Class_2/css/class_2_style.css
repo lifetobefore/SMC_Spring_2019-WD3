@@ -1,11 +1,29 @@
-.container {
-    background-color: blue;
+body {
+    background-image: url("../images/bg_patterns.jpg");
+    background-repeat: repeat;
 }
+
+.jumbotron {
+    background-color: gold;
+    box-shadow: 0.25px 0.5px 16px;
+}
+
+.card {
+    margin: 30px auto 0px auto;
+    box-shadow: 3px 3px 10px;
+}
+
+.inner {
+    margin: 100px auto 0px auto;
+    text-align: center;
+}
+
+/*        Class_2_styles  
 
 .row {
-    background-color: cornsilk; 
+    background-color: aliceblue;
 }
-
+  
 [class^="col-"]:first-child {
     background-color: aquamarine;
 }
@@ -13,3 +31,5 @@
 [class^="col-"]:last-child {
     background-color: salmon;
 }
+
+        The end of hidding        */
