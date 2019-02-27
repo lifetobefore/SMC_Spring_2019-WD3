@@ -1,11 +1,27 @@
-body {
+body {  
     background-image: url("../images/bg_patterns.jpg");
     background-repeat: repeat;
+
+}
+
+h1 {
+    font-size: 8rem;
+    font-family: 'Monofett', cursive;
+}
+
+.subtitle {
+    font-family: 'Gugi', cursive;
+    font-size: 25px;
 }
 
 .jumbotron {
+    text-align: center;
     background-color: gold;
-    box-shadow: 0.25px 0.5px 16px;
+    /*
+    background-image: url("../images/Top.jpg");
+    text-shadow: 0.25px 1px 5px #000000;
+    */
+    box-shadow: 0.25px 0.5px 16px; 
 }
 
 .card {
@@ -33,3 +49,27 @@ body {
 }
 
         The end of hidding        */
+
+@media (max-width: 767.99px) {
+    h1 {
+        font-size: 80px;
+        font-family: 'Monofett', cursive;
+    }
+
+    .subtitle {
+        font-family: 'Gugi', cursive;
+        font-size: 20px;
+    }
+  }
+
+@media (max-width: 414.99px) {
+    h1 {
+        font-size: 60px;
+        font-family: 'Monofett', cursive;
+    }
+
+    .subtitle {
+        font-family: 'Gugi', cursive;
+        font-size: 15px;
+    }
+  }
