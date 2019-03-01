@@ -7,132 +7,48 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/class_2_style.css">
-    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="stylesheet" href="main.css">
 
-    <!-- Link for fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Monofett" rel="stylesheet">
-    <title>Assignment_2</title>
+    <title>Bootstrap layout 1</title>
   </head>
   <body>
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-        <header class="masthead mb-auto">
-            <div class="inner">
-                <h3 class="masthead-brand">Cook-ies</h3>
-                <nav class="nav nav-masthead justify-content-center">
-                    <a class="nav-link active" href="#">Home</a>
-                    <a class="nav-link" href="#">Recipes</a>
-                    <a class="nav-link" href="#">About</a>
-                </nav>
-            </div>
-        </header>
-    </div>
-    <!-- Old style Navbar
-    <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light">
-        <a class="navbar-brand" href="#">Cook-ies</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-       
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                      <a class="nav-link" href="#">Cookies <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                      <a class="nav-link" href="#">Recipes</a>
-                </li>
-                <li class="nav-item">
-                      <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a class="navbar-brand" href="/">Class 2</a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>
-                  </li>
-            </ul>
-        </div>
-    </nav>
-    Old style Navbar -->
-
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <h1>Cook-ies</h1>
-            <p class="subtitle">Where you can become a master of cookies maker.</p>
-        </div>
-    </div>
-
+                    </li>
+                </ul>
+            </div>
+        </nav>
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="images/chocolate_chip_cookie.jpg" class="card-img-top" alt="chocolate chip cookie">
-                    <div class="card-body">
-                        <h5 class="card-title">Chocolate Chip Cookie</h5>
-                        <p class="card-text">It's a traditonal cookies that covers with chocolate chips on top.</p>
-                        <a href="#" class="btn btn-warning">Recipe</a>
-                    </div>
-                </div>
+            <div class="col-12 col-md-6">
+                <p>This is column 1.</p>
             </div>
-            <div class="col-12 col-md-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="images/peanut_butter_cookies.jpg" class="card-img-top" alt="peanut butter cookies">
-                    <div class="card-body">
-                        <h5 class="card-title">Peanut Butter Cookies</h5>
-                        <p class="card-text">A peanut butter cookies is always a good choice for starting a party.</p>
-                        <a href="#" class="btn btn-warning">Recipe</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="images/ginger_snap_cookies.jpg" class="card-img-top" alt="ginger snap cookies">
-                    <div class="card-body">
-                        <h5 class="card-title">Ginger Snap Cookies</h5>
-                        <p class="card-text">Another classic traditonal cookie that you do not want to miss.</p>
-                        <a href="#" class="btn btn-warning">Recipe</a>
-                    </div>
-                </div>
+            <div class="col-12 col-md-6">
+                <p>This is column 2.</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12 col-md-4">
-               <div class="card" style="width: 18rem;">
-                    <img src="images/oatmeal_cookies.jpg" class="card-img-top" alt="oatmeal cookies">
-                    <div class="card-body">
-                        <h5 class="card-title">Oatmeal Cookies</h5>
-                        <p class="card-text">If you like a soft and chewy cookie, Oatmeal Cookies is the choice.</p>
-                        <a href="#" class="btn btn-warning">Recipe</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="images/butter_cookies.jpg" class="card-img-top" alt="butter cookies">
-                    <div class="card-body">
-                        <h5 class="card-title">Butter Cookies</h5>
-                        <p class="card-text">Butter cookies is the most basic cookies, designed for beginners.</p>
-                        <a href="#" class="btn btn-warning">Recipe</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="images/hallongrotta_cookies.jpg" class="card-img-top" alt="hallongrotta cookies">
-                    <div class="card-body">
-                        <h5 class="card-title">Hallongrotta Cookies</h5>
-                        <p class="card-text">Want to try some fruity flavor? Try to make hallongrotta.</p>
-                        <a href="#" class="btn btn-warning">Recipe</a>
-                    </div>
-                </div>
-             </div>
-        </div>
-    </div>
 
-    <footer>
-        <div class="inner">
-            <p>Designed by ©Calvert Hou</p>
-        </div>
-    </footer>
+    </div>
+    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
