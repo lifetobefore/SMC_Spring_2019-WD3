@@ -7,20 +7,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <p id=text1>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-    <p id=text2>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+    <div>
+        <p id=text1>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <button id="button1_c" class="color-button">Change Colors</button>
+        <button id="button1_h" class="display-button">Hide Me</button>
+        <button id="button1_s">Show yourself</button>
+    </div>        
+    <div>
+        <p id=text2>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+        <button id="button2_c" class="color-button">Change Colors</button>
+        <button id="button2_h" class="display-button">Hide Me</button>
+        <button id="button2_s">Show yourself</button> 
+    </div>
+    <!--
+    <script class="Week_5_classpractice">
+        var Colorbutton1 = document.getElementById("button1_c");
+        var Hidebutton1 = document.getElementById("button1_h");
+        var Showbutton1 = document.getElementById("button1_s");
 
-    <script>
-        var text = document.getElementById("text1");
-        var greenVal = Math.random()*255;
-        var blueVal = Math.floor(Math.random()*255);
-        var redVal = Math.floor(Math.random()*255);
-        console.log(text);
-        console.log(redVal);
-        console.log(greenVal);
-        console.log(blueVal);
-        /*text.style.display= "none";*/
-        text.style.backgroundColor = "rgb( "+ redVal + " , "  + greenVal + ", " + blueVal + ")";
+        var Colorbutton2 = document.getElementById("button2_c");
+        var Hidebutton2 = document.getElementById("button2_h");
+        var Showbutton2 = document.getElementById("button2_s");
+
+        var text1 = document.getElementById("text1");
+        var text2 = document.getElementById("text2");
+
+        function changeColor(textElement){
+            var greenVal = Math.random()*255;
+            var blueVal = Math.floor(Math.random()*255);
+            var redVal = Math.floor(Math.random()*255);
+            textElement.style.backgroundColor = "rgb( "+ redVal + " , "  + greenVal + ", " + blueVal + ")";
+        };
+
+        function hidetext(textElement) {
+            textElement.style.display="none";
+        };
+
+        function showtext(textElemnt) {
+            textElemnt.style.display="blcok";
+        }
+
+        Colorbutton1.addEventListener("click", changeColor(text1));
+        Hidebutton1.addEventListener("click", hidetext(text1));
+        Showbutton1.addEventListener("click", showtext(text1));
+
+        Colorbutton2.addEventListener("click", changeColor(text2));
+        Hidebutton2.addEventListener("click", hidetext(text2));
+        Showbutton2.addEventListener("click", showtext(text2));
+
+
+        if you used var to indecated, you need to state it out first infoer to fuction the event.
+        var changeColor = fuction(){
+            var text = document.getElementById("text1");
+            var greenVal = Math.random()*255;
+            var blueVal = Math.floor(Math.random()*255);
+            var redVal = Math.floor(Math.random()*255);
+            text.style.backgroundColor = "rgb( "+ redVal + " , "  + greenVal + ", " + blueVal + ")";
+        } 
+        button.addEventListener("click", changeColor);   
     </script>
+    -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+            $(document).ready(function(){   
+                $(".color-button").click(function(){
+                    var greenVal = Math.random()*255;
+                    var blueVal = Math.floor(Math.random()*255);
+                    var redVal = Math.floor(Math.random()*255);
+                    $(this).siblings("p").css("background-color", "rgb( "+ redVal + " , "  + greenVal + ", " + blueVal + ")");
+                });
+                $(".display-button").click(function(){
+                    console.log(this);
+                    if($(this).siblings("p").css("display") === "none") {
+                        $(this).text("Hide Me");
+                    }
+                    else {
+                        $(this).text("Show Me");
+                    }
+                    $(this).siblings("p").toggle();
+                });
+            });
+        </script>
 </body>
 </html>
