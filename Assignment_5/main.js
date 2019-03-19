@@ -7,13 +7,13 @@ $(document).ready(function(){
         var greenVal = Math.random()*255;
         var blueVal = Math.floor(Math.random()*255);
         var redVal = Math.floor(Math.random()*255)+100;
-        $(this).siblings(".css-box").css("background-color", "rgb( "+ redVal + " , "  + greenVal + ", " + blueVal + ")");
-        $(this).siblings(".css-box").css("transform","rotate(" + rVal + "deg)");
-        $(this).siblings(".css-box").css("border-radius",bVal+"%")
-        $(this).siblings(".css-box").width(wVal);
-        $(this).siblings(".css-box").height(hVal);
+        $(".css-box").css("background-color", "rgb( "+ redVal + " , "  + greenVal + ", " + blueVal + ")");
+        $(".css-box").css("transform","rotate(" + rVal + "deg)");
+        $(".css-box").css("border-radius",bVal+"%")
+        $(".css-box").width(wVal);
+        $(".css-box").height(hVal);
     });
-
+    
     $(".alert-button").click(function(){
         alert("!!!!!!!!!!!!!! Don't look !!!!!!!!!!!!!!!!");
     });
@@ -42,14 +42,24 @@ $(document).ready(function(){
     });*/
 
     $("input").blur(function(){
-        var info = $(this).val();
-        console.log(info);
-        if( info == 0 ) {
+        /*var info = $(this).val();*/
+        console.log(this.value);
+        /*if( this.value === "" ) {
             $(this).siblings(".input-alert").text("Please fill in your information");            
         }
         else {
             $(this).siblings(".input-alert").empty();
+        }*/
+        if(this.value.length <= 7) {
+            $(this).siblings(".input-alert").text("Required for 7 letters.");            
         }
+        else {
+            $(this).siblings(".input-alert").empty();
+        }
+    });
+
+    $("#textinput").blur(function(){
+        prompt("Hello there","Let me know your name.");
     });
 
     $(".animation-box").click(function () {
