@@ -14,7 +14,11 @@ $(document).ready(function(){
         $(this).siblings(".css-box").height(hVal);
     });
 
-    $(".top-box-button").click(function(){
+    $(".alert-button").click(function(){
+        alert("!!!!!!!!!!!!!! Don't look !!!!!!!!!!!!!!!!");
+    });
+
+    /*$(".top-box-button").click(function(){
         if($(this).siblings("button").css("display") === "none") {
             $(this).text("Hide Me");
         }
@@ -23,9 +27,9 @@ $(document).ready(function(){
         }
         $(this).siblings("button").toggle();
         $(this).siblings("div").toggle();
-    });
+    });*/
 
-    $(".insert-text-button").click(function(){
+    /*$(".insert-text-button").click(function(){
         console.log(this);
         if($(this).text() === "Alert") {
             $(this).siblings("div").text("!!!!!!!!!!!!!!!!!!!!!!ALERT!!!!!!!!!!!!!!!!!!!!!!");
@@ -35,7 +39,7 @@ $(document).ready(function(){
             $(this).siblings("div").empty();
             $(this).text("Alert");
         }
-    });
+    });*/
 
     $("input").blur(function(){
         var info = $(this).val();
