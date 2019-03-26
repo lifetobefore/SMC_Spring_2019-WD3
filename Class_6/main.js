@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $('.carousel').carousel({
         interval:   1200,
-        keyboard:   false,
+        keyboard:   true,
      /* pause:,
         ride:,
         wrap:,
@@ -12,17 +12,15 @@ $(document).ready(function(){
         $('.carousel').carousel('pause');
     });
 
-    $('.carousel-pauser').on('slid.bs.carousel',function(){
+    $('.carousel-pauser').on('slid.bs.carousel',function(event){
         console.log(event);
     });
 
-    $('modal-popper').click(function(){
-        $('modal').modal({
-            backrop: 'static'
+    $('.modal-popper').click(function(){
+        $('.modal').modal({
+            backdrop: 'static'
         });
     });
-
-    $('modal').modal({});
 
   /*var HTML = '<h1 class="header">Hello</h1>'*/
 });
