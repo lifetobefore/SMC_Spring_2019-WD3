@@ -35,8 +35,7 @@
         </div>
     </div>
     <div class="container featurette">
-    <hr class="featurette-divider">
-        <img class="cover" src="https://elements-cover-images-0.imgix.net/6ebef0a3-2a18-4e0d-8dd4-8473115f531b?w=1170&fit=max&auto=compress%2Cformat&s=0ec0b069a8cfcaa31827a3d7b0375695" alt="">
+        <hr class="">
         <div class="row">
             <div class="col-md-3">
                   <h2 class="featurette-heading">Locations</h2>
@@ -92,7 +91,12 @@
                 </ul>
             </div>
         </div>
-        <hr class="featurette-divider">
+        <hr class="">
+        <div class="row">
+            <div class="col-12">
+                <img class="cover" src="https://elements-cover-images-0.imgix.net/6ebef0a3-2a18-4e0d-8dd4-8473115f531b?w=1170&fit=max&auto=compress%2Cformat&s=0ec0b069a8cfcaa31827a3d7b0375695" alt="">
+            </div>
+        </div>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -100,5 +104,40 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+    <!--Newsletter Susbcribe-->
+    <div class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <button type="button" class="close text-right px-3 pt-3" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <form action="" class="bg-color col-12 col-md-12">
+                                <div class="form-group">
+                                    <h1 class="display-4 text-info text-center">Suscbribe News</h1>
+                                    <p class="display-6 text-info text-center">Sign up for our mewsletter and discount code.</p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Name</label>
+                                    <input type="username" class="form-control" placeholder="User name">
+                                    <div class="input-alert"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email</label>
+                                    <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <div class="input-alert"></div>
+                                </div>
+                                <div class="modal-footer justify-content-center">
+                                    <button type="submit" class="btn btn-info">Susbcribe</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
