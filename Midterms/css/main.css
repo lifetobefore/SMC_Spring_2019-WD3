@@ -262,3 +262,9 @@ th{
         object-fit: cover;
     }
 }
+@media (min-height: 1020px) {
+    .carousel-style {
+        position: relative;
+        top: -50px;
+    }
+}
