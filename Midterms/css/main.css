@@ -190,7 +190,7 @@ p {
     .carousel-player i {
         position: absolute;
         left: 6.5vw;
-        bottom: 2vh;
+        bottom: 1.5vw;
         z-index: 9999;
         color: white;
         background: none;
@@ -199,7 +199,7 @@ p {
     .carousel-pauser i {
         position: absolute;
         right: 6.5vw;
-        bottom: 2vh;
+        bottom: 1.5vw;
         z-index: 9999;
         color: white;
         background: none;
