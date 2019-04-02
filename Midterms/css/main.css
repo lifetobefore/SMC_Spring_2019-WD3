@@ -255,3 +255,10 @@ th{
         font-size: 15px;
         color: rgb(220, 220, 220);
     }
+@media (max-height: 960px) {
+    .carousel-cover {
+        height: 90vh;
+        width: 100vw;
+        object-fit: cover;
+    }
+}
