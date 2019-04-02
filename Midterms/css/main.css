@@ -33,6 +33,12 @@ p {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
 /* navbar style start*/
 .navbar {
     background-color: rgb(20, 20, 20);
