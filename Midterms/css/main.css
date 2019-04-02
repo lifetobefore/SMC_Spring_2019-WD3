@@ -95,7 +95,7 @@ p {
         width: 295px;
         border: 1px solid white;
     }
-        @media (max-width: 400px) {
+        @media (max-width: 415px) {
             .navbar .navbar-brand{
                 font-size: 1.5em;
             }
