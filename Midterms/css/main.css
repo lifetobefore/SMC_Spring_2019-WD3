@@ -263,8 +263,20 @@ th{
     }
 }
 @media (min-height: 1020px) {
+    
+}
+@media (min-width: 1800px) {
+    .carousel-cover {
+        height: 95vh;
+        width: 100vw;
+        object-fit: cover;
+    }
     .carousel-style {
         position: relative;
-        top: -50px;
+        top: -150px;
+    }
+    .carousel-caption{
+        padding: 50px;
+        background-color: rgba(20, 20, 20, 0.8);
     }
 }
