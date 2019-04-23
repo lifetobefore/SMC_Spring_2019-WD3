@@ -121,6 +121,7 @@
             $("#priceRange").change(function(){
                 var offerPrice = $(this).val();
                 $(this).siblings(".invalid-feedback").remove();
+                $(this).siblings(".valid-feedback").remove();
                 console.log($(this).val());
                 if (offerPrice < 45000){
                     $(this).after('<div class="invalid-feedback"> Don\'t lowball us !!!</div>');
