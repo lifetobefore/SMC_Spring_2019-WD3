@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        
+    </style>
+    
+    <title>Assignment_9</title>
+  </head>
+  <body>
+      <div class="container mt-3 shadow rounded">
+          <div class="row">
+              <div class="col-6 px-5 py-5">
+                  <form action="form-process.php" methid="GET">
+                      <div class="form-group">
+                          <label for="clothingSize">Select Size</label>
+                          <select id="clothingSize" class="form-control" name="clothingsize">
+                              <option value="">from XS to XL</option>  
+                              <option value="xs">XS</option>
+                              <option value="s">S</option>
+                              <option value="m">M</option>
+                              <option value="l">L</option>
+                              <option value="xl">XL</option>
+                          </select>
+                      </div>
+                      <div class="form-group">
+                          <label for="">Available Color</label>
+                          <select id="clothingColor" class="form-control" name="clothingcolor" disabled>
+                              <option>chose your color</option>
+                          </select>
+                      </div>
+                      <button typr="submit" class="btn btn-warning">Add to Bag</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+      <div class="container mt-3 shadow rounded">
+            <div class="row">
+                <div class="col-6 px-5 py-5">
+                    <form action="form-process.php" methid="GET">
+                        <div class="form-group">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadioInline1">XS</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadioInline2">S</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadioInline1">M</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline4" name="customRadioInline1" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadioInline2">L</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline5" name="customRadioInline1" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadioInline1">XL</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Available Color</label>
+                            <select id="clothingColor" class="form-control" name="clothingcolor">
+                                <option>chose your color</option>
+                            </select>
+                        </div>
+                        <button typr="submit" class="btn btn-warning">Add to Bag</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script>
+            $(document).ready(function(){
+                var xsColor = ["Black", "White", "Blue", "Red"];
+                var sColor = ["Black", "White", "Blue", "Red", "Green"];
+                var mColor = ["Black", "White", "Blue", "Red", "Green", "Grey"];
+                var lColor = ["Black", "White", "Red"];
+                var xlColor = ["White", "Blue", "Red", "Grey"];
+                //start of second selection
+                $("#clothingSize").change(function(){
+                    var currentSelect = $(this).val();
+                    var innerContent = "";
+                    $("#clothingColor").removeAttr('disabled');
+                    
+                    switch(currentSelect) {
+                        case "xs":
+                            for (var i = 0 ; i < xsColor.length ; i++){
+                                innerContent +='<option value="' + xsColor[i].toLowerCase() + '">' + xsColor[i] + '</option>'
+                            }
+                            break;
+                        case "s":
+                            for (var i = 0 ; i < sColor.length ; i++){
+                                innerContent +='<option value="' + sColor[i].toLowerCase() + '">' + sColor[i] + '</option>'
+                            }
+                            break;
+                        case "m":
+                            for (var i = 0 ; i < mColor.length ; i++){
+                                innerContent +='<option value="' + mColor[i].toLowerCase() + '">' + mColor[i] + '</option>'
+                            }
+                            break;
+                        case "l":
+                            for (var i = 0 ; i < lColor.length ; i++){
+                                    innerContent +='<option value="' + lColor[i].toLowerCase() + '">' + lColor[i] + '</option>'
+                            }
+                            break;
+                        case "xl":
+                            for (var i = 0 ; i < xlColor.length ; i++){
+                                    innerContent +='<option value="' + xlColor[i].toLowerCase() + '">' +xlColor[i] + '</option>'
+                            }
+                            break;
+                        default:
+                            break;
+                        
+                    }// end of switch
+                    $("#clothingColor").html(innerContent);
+                });
+                //end of second selection
+                //start of radios selection
+                $("#clothingSizeRadios")
+                //end of radios selection
+            });
+        </script>
+  </body>
+</html>
