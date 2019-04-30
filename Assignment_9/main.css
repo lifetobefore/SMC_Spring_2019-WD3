@@ -34,7 +34,7 @@ body{
     animation-delay: 1s;
     animation-iteration-count: infinite;
     animation-fill-mode: both;
-    animation-timing-function: linear;
+    animation-timing-function: ease-in-out;
 }
 
 .eyelid{
@@ -51,7 +51,7 @@ body{
     animation-delay: 1s;
     animation-iteration-count: infinite;
     animation-fill-mode: both;
-    animation-timing-function: linear;
+    animation-timing-function: ease-in;
 }
 
 
@@ -80,6 +80,18 @@ body{
         top: -15%;
         left: -15%;
     }
+    80%{
+        top: -15%;
+        left: -15%;
+    }
+    82%{
+        top: 50%;
+        left: 50%;
+    }
+    85%{
+        Top: -15%;
+        left: -15%;
+    }
 }
 
 @keyframes move {
@@ -87,23 +99,39 @@ body{
         top: 50%;
         left: 50%;
     }
-    48%{
+    50%{
         top: 20%;
         left: 80%;
     }
-    50%{
-        top: 50%;
-        left: 50%;
-    }
-    52%{
-        top: 50%;
-        left: 50%;
-    }
     55%{
+        top: 50%;
+        left: 50%;
+    }
+    60%{
+        top: 50%;
+        left: 50%;
+    }
+    65%{
         top: 80%;
         left: 20%;
     }
-    57%{
+    70%{
+        top: 50%;
+        left: 50%;
+    }
+    80%{
+        top: 50%;
+        left: 50%;
+    }
+    85%{
+        top: 0%;
+        left: 50%;
+    }
+    90%{
+        top: 50%;
+        left: 0%;
+    }
+    95%{
         top: 50%;
         left: 50%;
     }
