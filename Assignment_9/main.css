@@ -1,0 +1,110 @@
+body{
+    background-color: orange;
+}
+
+.col{
+    margin-top: 40%;
+}
+
+.eye {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 75% 0;
+    transform: translate(-50%, -50%) rotate(45deg);
+    overflow: hidden;
+}
+
+.ball{
+    width: 150px;
+    height: 150px;
+    background-color: #222;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 30px solid #333;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    /*css animation*/
+    animation-name: move;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+}
+
+.eyelid{
+    width: 300px;
+    height: 200px;
+    background-color: rgb(255, 205, 213);
+    position: absolute;
+    top: -15%;
+    left: -15%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    /*css animation*/
+    animation-name: blink;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+}
+
+
+@keyframes blink {
+    28%{
+        top: -15%;
+        left: -15%;
+    }
+    30%{
+        top: 50%;
+        left: 50%;
+    }
+    32%{
+        top: -15%;
+        left: -15%;
+    }
+    38%{
+        top: -15%;
+        left: -15%;
+    }
+    40%{
+        top: 50%;
+        left: 50%;
+    }
+    42%{
+        top: -15%;
+        left: -15%;
+    }
+}
+
+@keyframes move {
+    45%{
+        top: 50%;
+        left: 50%;
+    }
+    48%{
+        top: 20%;
+        left: 80%;
+    }
+    50%{
+        top: 50%;
+        left: 50%;
+    }
+    52%{
+        top: 50%;
+        left: 50%;
+    }
+    55%{
+        top: 80%;
+        left: 20%;
+    }
+    57%{
+        top: 50%;
+        left: 50%;
+    }
+}
