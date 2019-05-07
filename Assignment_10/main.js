@@ -40,15 +40,15 @@ window.onload = function(){
 
     window.onkeydown = function(event){
         var key = event.keyCode;
-        if ( key == 38 && my > 50){
+        if ( key == 38 && my > 0){
             my = my - 10;
         }
 
-        else if ( key == 40 && my<= 740){
+        else if ( key == 40 && my<= 540){
             my = my + 10;
         }
 
-        else if ( key == 37 && mx > 50){
+        else if ( key == 37 && mx > 0){
             mx = mx - 10;
         }
 
