@@ -22,42 +22,43 @@ window.onload = function(){
     context1.fillText("Overlap", 650, 85);
 
 
-
+    //moving rect
     var canvas2 = document.getElementById("myCanvas2");
-    canvas2.addEventListener("keydown", movebox, true);
     var context2 = canvas2.getContext("2d");
-
+    
+    var rw = 50;
+    var rh = 50;
     var mx = 50;
     var my = 50;
     
-    context2.fillStyle = "blue";
-    context2.fillRect(mx, my, 50, 50);
+    function drawRect(mx,my,rw,rh){
+        context2.fillStyle = "blue";
+        context2.fillRect(mx, my, rw, rh);
+    }
 
-    function movebox(){
+    drawRect(mx,my,rw,rh);
 
-        if ( e.keyCode == 38){
-            context2.clearRect(0, 0, canvas.width, canvas.height);
-            my = my - 10 ;
-            context2.fillRect(mx, my, 50, 50);
+    window.onkeydown = function(event){
+        var key = event.keyCode;
+        if ( key == 38 && my > 50){
+            my = my - 10;
         }
 
-        if ( e.keyCode == 40){
-            context2.clearRect(0, 0, canvas.width, canvas.height);
-            my = my + 10 ;
-            context2.fillRect(mx, my, 50, 50);
+        else if ( key == 40 && my<= 740){
+            my = my + 10;
         }
 
-        if ( e.keyCode == 37){
-            context2.clearRect(0, 0, canvas.width, canvas.height);
-            mx = mx - 10 ;
-            context2.fillRect(mx, my, 50, 50);
+        else if ( key == 37 && mx > 50){
+            mx = mx - 10;
         }
 
-        if ( e.keyCode == 39){
-            context2.clearRect(0, 0, canvas.width, canvas.height);
-            mx = mx + 10 ;
-            context2.fillRect(mx, my, 50, 50);
+        else if ( key == 39 && mx <= 740){
+            mx = mx + 10;
         }
+
+        context2.clearRect(0,0,800,600);
+
+        drawRect(mx,my,rw,rh);
     }
 }
 
