@@ -7,7 +7,7 @@ window.onload = function(){
     var x = 50;
     var y = 50;
 
-    context1.arc(350,y+25,radius,0,2*Math.PI,false);
+    context1.arc(x+300,y+25,radius,0,2*Math.PI,false);
     context1.fill();
 
     context1.fillStyle = 'rgba(0, 0, 200, 0.5)';
@@ -26,38 +26,38 @@ window.onload = function(){
     var canvas2 = document.getElementById("myCanvas2");
     canvas2.addEventListener("keydown", movebox, true);
     var context2 = canvas2.getContext("2d");
+
+    var mx = 50;
+    var my = 50;
     
     context2.fillStyle = "blue";
-    context2.fillRect(x, y, 50, 50);
+    context2.fillRect(mx, my, 50, 50);
 
-    function movebox(event){
-        var key = event.keyCode;
-        
-        if ( key == 38){
+    function movebox(){
+
+        if ( e.keyCode == 38){
             context2.clearRect(0, 0, canvas.width, canvas.height);
-            y = y - 10 ;
-            context2.fillRect(x, y, 50, 50);
+            my = my - 10 ;
+            context2.fillRect(mx, my, 50, 50);
         }
 
-        if ( key == 40){
+        if ( e.keyCode == 40){
             context2.clearRect(0, 0, canvas.width, canvas.height);
-            y = y + 10 ;
-            context2.fillRect(x, y, 50, 50);
+            my = my + 10 ;
+            context2.fillRect(mx, my, 50, 50);
         }
 
-        if ( key == 37){
+        if ( e.keyCode == 37){
             context2.clearRect(0, 0, canvas.width, canvas.height);
-            x = x - 10 ;
-            context2.fillRect(x, y, 50, 50);
+            mx = mx - 10 ;
+            context2.fillRect(mx, my, 50, 50);
         }
 
-        if ( key == 39){
+        if ( e.keyCode == 39){
             context2.clearRect(0, 0, canvas.width, canvas.height);
-            x = x + 10 ;
-            context2.fillRect(x, y, 50, 50);
+            mx = mx + 10 ;
+            context2.fillRect(mx, my, 50, 50);
         }
-
     }
-
 }
 
