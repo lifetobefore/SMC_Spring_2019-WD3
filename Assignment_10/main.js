@@ -41,19 +41,19 @@ window.onload = function(){
     window.onkeydown = function(event){
         var key = event.keyCode;
         if ( key == 38 && my > 0){
-            my = my - 10;
+            my = my - 50;
         }
 
         else if ( key == 40 && my<= 540){
-            my = my + 10;
+            my = my + 50;
         }
 
         else if ( key == 37 && mx > 0){
-            mx = mx - 10;
+            mx = mx - 50;
         }
 
         else if ( key == 39 && mx <= 740){
-            mx = mx + 10;
+            mx = mx + 50;
         }
 
         context2.clearRect(0,0,800,600);
