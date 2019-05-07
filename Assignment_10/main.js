@@ -56,7 +56,7 @@ window.onload = function(){
             mx = mx + 50;
         }
 
-        context2.clearRect(0,0,800,600);
+        context2.clearRect(0,0,canvas2.width,canvas2.height);
 
         drawRect(mx,my,rw,rh);
     }
