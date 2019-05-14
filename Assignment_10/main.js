@@ -28,11 +28,16 @@ window.onload = function(){
     
     var rw = 50;
     var rh = 50;
-    var mx = 50;
-    var my = 50;
+    var mx = 0;
+    var my = 0;
+    var speed = 50;
     
     function drawRect(mx,my,rw,rh){
-        context2.fillStyle = "blue";
+        var gradient1 = context2.createLinearGradient(0, 0, canvas2.width, 0);
+        //context2.fillStyle = "blue";
+        gradient1.addColorStop(0, "red");
+        gradient1.addColorStop(1, "blue");
+        context2.fillStyle = gradient1;
         context2.fillRect(mx, my, rw, rh);
     }
 

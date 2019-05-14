@@ -1,0 +1,25 @@
+*{
+    font-family: 'Unica One', cursive;
+    font-size: 24px;
+}
+
+body{
+    background-color: gold;
+}
+
+#intro{
+    margin-top: 100px;
+}
+
+label{
+    margin: 25px;
+}
+
+#timesClicked{
+    color: red;
+    font-size: 40px;
+}
+
+#Game {
+    background-color: white;
+}
