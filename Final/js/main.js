@@ -19,3 +19,14 @@ button.onclick = function(){
   count++;
   display.innerHTML = count;
 }
+
+var $form = $("#myform");
+var $submitbutton = $("#submitbutton");
+
+$form.on("blur", "input", () => {
+  if ($form.valid()) {
+    $submitbutton.removeAttr("disabled");   
+  } else {
+    $submitbutton.attr("disabled", "disabled");
+  }
+});
