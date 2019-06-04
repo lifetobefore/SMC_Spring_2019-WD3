@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Custom style -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Slab&display=swap" rel="stylesheet">
+
+    <!-- jQuery CND -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico">
+
+    <!-- external css -->
+
+    <title>Pencils</title>
+  </head>
+  <body>
+
+    <!-- navigation bar -->
+    <nav class="navbar">
+      
+      <!-- logo -->
+      <a class="navbar-brand" href="../index.html">
+        <img src="../images/nav/logo.png" width="30px">
+        <span class="logo">Pencils</span>
+      </a>
+      
+      <!-- navbar -->
+      <div id="mySidenav" class="sidenav">
+          <a class="closebtn" onclick="closeNav()">
+            <!-- toggle button-->
+            <div class="toggle">
+              <div class="hamburger"></div>
+            </div>
+          </a>
+          <a href="../index.html">Home</a>
+          <a class="active" href="../pages/pencils.html">Pencils</a>
+          <a href="../pages/blog.html">Blog</a>
+          <a href="../pages/contact.html">Contact</a>
+        </div>
+    
+        <!-- Use any element to open the sidenav -->
+        <span onclick="openNav()">
+          <!-- toggle button-->
+          <div class="toggle">
+            <div class="hamburger"></div>
+          </div>
+        </span>
+    
+        <div id="shoppingCart" class="shopping-cart">
+          <a href="checkout.html">
+            img src="../images/nav/shoppingbag.svg">
+          <span class="cart-number">0</span>
+          </a>
+        </div>      
+      </nav>
+
+
+      <!-- lg screen menu -->
+      <div class="container container-fluid lg-navbar-container">
+
+        <!-- logo -->
+        <a class="lg-navbar-brand" href="index.html">
+            <img src="../images/nav/logo.png" width="30px">
+            <span class="logo">Pencils</span>
+        </a>
+
+        <!-- pages links -->
+        <nav class="lg-navbar">
+          <a  href="../index.html">Home</a>
+          <a class="active" href="../pages/pencils.html">Pencils</a>
+          <a href="../pages/blog.html">Blog</a>
+          <a href="../pages/contact.html">Contact</a>
+          <div class="line"></div>
+        </nav>
+
+        <!-- shopping cart -->
+        <a href="checkout.html" class="lg-shopping-cart">
+          <div id="shoppingCart" class="shopping-cart">
+            <img src="../images/nav/shoppingbag.svg">
+            <span id="displayCount" class="cart-number">0</span>
+          </div>
+        </a>
+      </div>
+    
+
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="superContainer">
+        <div class="jumbotron jumbotron-fluid bg-white">
+            <div class="container">
+              <p class="j-text text-center">Mechanical Pencil</p>
+            </div>
+          </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-5">
+              <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-interval="10000">
+                      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMHBhAIBxIWFBEVGBoYEhgVFxceGBsXGB0WHR0bFhkdHSghGB4xHxcfLTEtJSsrLjovGR8zRDMuNygtMDcBCgoKDQ0OFRAQGislHR0vKzctMC04Nzc3MistKy03OCs1LTcrKys3LisrKys3NzcrLS0rNzcrLSsrNywrOCs3K//AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABwECAwQFBgj/xAA4EAACAQMCBQIDBwIGAwEAAAAAAQIDBBEFIQYHEjFBE1EiMmEUI0JScYGxFWIzkaHB4fBjgrJD/8QAFwEBAQEBAAAAAAAAAAAAAAAAAAECA//EABsRAQACAgMAAAAAAAAAAAAAAAABEQKhAxJB/9oADAMBAAIRAxEAPwCcQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH2Iu4r5xUdH1+OnaXSV1CO1ecZ4w84cae2JNJe+O2/kCUQc7Qtbo6/psdQ0ufXTl/mn5jJd4yXlM6IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8RzhvLmw4Jq3Oj1Y0sOKquWFJ05bNU29urLX1ayluB47m3zLfVLh7hio1Lb1q9OS275p02uz7Zae2MeSJrO1UIdUlt5XZrAsbRRpqb7d9n2/wCCl9eemvTi/wB/oUd/hjjSpwfrCu7b46UmlXhnacP4U14f7dmz6etq6ubeFel8soqUc+zWV/JBvKXlk76pDiDiWDVNN+lb1ILE8radRP8ADu8LG7SecbOdyAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGnO9b650F1Rhnqfu13Uff/qLK1V3cnSpPFNfPP3x3jF/yyMeJOMKvEV69E4Sk6dnTfTWr09pVH2cKD8R/u8vONllhbxvzjVlcvT+FYxqzi/jrTy6aftTisOf65S9ske8dcV3XGV1Tr6lH0raCXpUoybh14+KUnhZl3xlbLt5bxa/whV4UuYfal1Uan+FPw8fgl+WaXjs+6zvjnX1+vsjt2k1JYwBboel3WuV6tvoNGVVQg5VOnGIr9/L/ACrd77bM99yp5YvVKkdb4np4oJv06FSLTnJfiqJ4+BPsvON9u8icnaVuuA7arpdGVJSz6vVvKdSL6ZTcvxJtbfTbbB7cCiXSsIqAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0qk3eTdGi8QW05Lz/bH/AHZSdR3s3RovEFtOS8v8sX/L/bv2jjmpzJjw/SloHDjTusYnOO8aKft71Pp47ganObjmFjYS4V0Kf38sRruHanT8wz+Z+cdln3OVyj16jGcdH1WMYVu1vU2UZ/2S/LPbZ+e3dbx3p2g17uylqcKc6keqSbSlKcml1TlsnsupZb8yxu84wVb1RpdEt14x3X6P2KPofi+vRq6XU0/UIqcJLE0/GO3S/Ek98+CHuFOXdfibW39nk/sMZ/FXezcU1mMEu9TH7efZPu8CWF5zDt1HUZyhb0mlOs4yzWjv8MJY6XJdOJP+5Nr3nPTNPp6XYwsrCChTgsRiv9/d+7flkFdMsYaZp9Kwso9NKnFQgt3iMVhbvdmyAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0a03d1HQt3iKeKk1/8AMfr7vx+va65qOrV+zUHh7dcvyr2T/M/+fYi/mNzGXDth/QeHp9d201Op8L9GLbx2WHUx29tm9wM/NPmPHh6i9A4bad1jE5R3VCP096nsvHchuw0atUtVq86cqtPrcp/M5TUHmpKTSbUPEpvG7+jNvhbhqesVJXWYy6Jx641HP7xtSm4zmk/Si1CSc5YWWtzc1fXVptOD01whUmlKtQjT6adCvGDpymo7RjW7rCTWN3uyi3VuIqdpGM9ClFSc5TwqKhGCwvTk6f8Ah/aIdU49cMpxw3lnZ5T8uHxLVjq+sxcbKL+CLynWa8L/AMa8vzuvcs5U8uHxPWjq2rpxsYv4I9nWa8Lz0Ly/Pb3PoujSVClGlRSjGKSiksJJbJJeEQKVJUacadJJRikopLCSXZJeEXgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIt5scyloUZaJoMs3klipNbqin/NT2Xjv7Aa3Nnj5aJGpoWhVM3M8+rKOMUVLvl93UfheO/sRTwlw5/U5/aLt+laQko1avs+/StnjbeUmmoxfU/Yrwzw9PWrj7Tc9fo9T9SUXH1as0nN06CnJerWaX1xnO/Z9a/4jp6FRrUOHcRnV6fjpT6rdwj8VOtCE05QuUulSbxiUW+7A5vEUo8Oa9Up6LXk3TlJJuLUoNNrpn1LpqNYypJY+V7NHf5Xcup8WXK1jWlJWallJ56q8s779+nPd+Xle7WLlby3lxXVjqWrJwsIPCWWnWa/DF91D3kv0W+Wvo63oRtaEbe2jGEIJRhGKSjGK2SilslgBQoxt6EaFCKjCKUYxikkktkkl2WDIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAi3mvzLWhRlougSUrtrFSa3VFP+ansvHd+EA5r8y1oUZaLoEk7trFSa3VFP+ansvHd+CIOGOG6mu3arV+tUZVHGdROPXOq4VKip0utpTqy6Gt3hdSb2NvhfgmtxPplzqFGvCM4tpKeZTnUe+ZvOYJuSSk85edsJs3NZ4wpR0mlT0CnK3qNJSh1SlGnCPZYaUXU61GcZqPXHo3lJyaQb/FnElHR6ULDh2UHKKSTilKlRlHKVS3k8tVsPuviWZ9Uqj6JRwcr+XM+LbhalqqcLGD+qlWa/DF91DPzSW/dLfLVnK/l3PjC6Wo6onGwhLfunWku8IPuo/mkv0W+WvpC2t4WlvG3toqEIJRhGKSiorZJJdkBW3oRtaEaFtFQhFKMIxSUVFbJJLZIyAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIo5lc1Y6Y6ui8NvruVmNSssOFJ75Ufz1F/kn7tNAbHNTmT/Q1LRNAkpXj/AMSaw1RT/wBHUx2Xju/CIMhaurm5nLr6m5SlnLbfdt+dzc0SlCN7C51LM4OXVVbbbeWsyns3Nd3JLLf17G1r2oU5307q1gqcZJLC7SazmeMJrOy7J4im920sTk748fm2pYa7X0GVSelVXSlUioycYwbws4w5J9L3e6w92eh5Y8vJ8Y3a1HVOqNhGW73Uq0l3jB9+nPzS/Zb5aryz5eT4yuv6lqKcLCMt+6lWa7xpvxHPzS/Zb5a+j7S2hZ20La1ioU4JRhGKwlFbJJLsjbhKtrbQs7aFtaxUKcEowjFYSitkkvCMoAAAAAAAAAAAAAAAAAAAAAAAAAAAAACGubfMx0ZVOHeHZfH8ULqrj5U1hwpP82+78Y23Ac3eZfoepw7w5NqrnpuK0e0U1vClLPz77vG3ZPPaHbSj0LYttbbbtt5Rnq1VSjhdvAGWpdejH4T1XLfl/U40vFqGqKULCD3e6dZpvMIPxHK+KX7LfLWhy64Jq8bam5S6oWlNr16i8vv6dN+ZY7+ya91n6bsrSFjaQtLSKhThFRhGKwlFbJIlRdtd5qlbS2hZ20La0ioU4JRhGKwlFbJJeEZgCsgAAAAAAAAAAAAAAAAAAAAAAAAAAAEN83OZfoupw7w7L7z4oXVTf4Nl8FJ/m3eX4x79gpzc5l+i6nDvDsvvPihdVd/hysOFJ/m3eX4x7kNW1DCx4FvRwl7GWrVVNYQF9WsqcMefB6Dl5wLV421B1KnVTs4NqrVjjeaUX0Qy/mw1vhpIu5d8BVeNb11q7lTsot9dRJfFJY+Cnnzvu90j6W03T6WlWUbLTqcadKPyxgkorO72Xlt5f1YFNM0+lpdlCz06nGnSgsRjBJJeXsvLe792zbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARBzd5lfYo1OHeHZp1n1Quai6k6awvhptY+N5eXv04a7vYMfN3mX9ndTh3h2f3j6oXVRZThsvgpP827y98Y9+0M0KOI/T6lKNLO8vPv3yZa1X044XcClWp6ax5PUcuuAavGl769x1U7KPz1ElmUk1mFPPnfd74LeXnANXjW7dWs5UrOL+OqksyaazTp5fzYffdL2fY+l9OsKWmWcbOwpxp0orEYwSSX6ICmnafS0uzjZ6fTjTpR2jCCSS89v3/wBTaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcbizUK2maHUu9KpqpVWMKT2SbScsfixnONsgR7ze5jy0yU+HdAf3zji4qpvNJSW0abX/6Yffxt5e0JUaXU+ubzndt98/VkoLgf+vaY3OWLldUvVl+Ocnl9SSzhttywtm8ryiOdToT0u5nZ3kHTqweJxl/3DXs1swMFaqqccI9Ly74BrcaXnrV3KlZwfx1en5mms06eWt8N77pez7FeXfANbjO+9a46qVnB5nV6fnaazTpvKy8Z33Sx+x9K6bp9LTLKFlp9ONOlBYjGKwkA07T6WmWcbPT6cadKKxGMFhL9jaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKN4WTwN/qVXijUfStU4WNKSy33rSW6/wDT2XnZ+yPUa85XUFpds8Sq562vw0l8z+jfZfq34OLqdX7TQ/pHDEOupBdLqdqNPw1Ofl/2xzJfQDU1nU6NnJw0zMqyjKTpwUpOPTvKTSTSj9X5233PGafwhU5j16Oq3qVK0i8Kon95Vim8qn+VZWPi28rJKnC/DlPQLNxi+utPevVaxKb3/wAorLwvH65Z2ksLCA1tM0+lpdjCx0+Cp0oLEIx7JG0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADBeXKs7aVepnC9jOAORb2Ur+Mq2pZSnj7tPHwLOIya3fd5X+fsupRoxoUlSopRilhKKSSX0S7F4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//Z" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-interval="2000">
+                      <img src="https://images-na.ssl-images-amazon.com/images/I/51PtdcTLKwL._SX425_.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://static2.jetpens.com/images/a/000/002/2461.jpg?ba=middle%2Ccenter&balph=3&blend64=aHR0cDovL3d3dy5qZXRwZW5zLmNvbS9pbWFnZXMvYXNzZXRzL3dhdGVybWFyazIucG5n&bm=difference&bs=inherit&mark64=aHR0cDovL3d3dy5qZXRwZW5zLmNvbS9pbWFnZXMvYXNzZXRzL3dhdGVybWFyazEucG5n&markalign=top%2Cright&markalpha=30&markscale=16&q=90&w=600&s=a66bd8311dce0d7f32306a1953b173b0" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+          </div>
+          <div class="col-5">
+            <h1>Mechanical Pencil, 0.5 mm</h1>
+            <h2> 7.99 $ </h2>
+            <p>The Retro 0.9mm Full Size Lead is the perfect fitting refill for your Retro 51 mechanical pencil! Retro 51 creates classic, throw-back designs reminiscent of a simpler time. Consider stocking up today to save on shipping costs!</p>
+            <button id="countButton" type="button" class="btn btn-sm btn-outline-danger">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="jumbotron jumbotron-fluid bg-white">
+          <div class="container">
+            <p class="j-text text-center mt-5"></p>
+          </div>
+        </div>
+    <div class="container">
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <div class="row">
+          <div class="col-12 col-md">
+            <img class="mb-2" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
+            <small class="d-block mb-3 text-muted">© 2017-2019</small>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Pencils</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Color Pencils</a></li>
+              <li><a class="text-muted" href="#">Mechanical Pencil</a></li>
+              <li><a class="text-muted" href="#">Mechanical Pencil Leads</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Brands</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Rite</a></li>
+              <li><a class="text-muted" href="#">YEpp</a></li>
+              <li><a class="text-muted" href="#">Uni Kuru</a></li>
+              <li><a class="text-muted" href="#">Bic</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Team</a></li>
+              <li><a class="text-muted" href="#">Locations</a></li>
+              <li><a class="text-muted" href="#">Privacy</a></li>
+              <li><a class="text-muted" href="#">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- Customized JavaScript -->
+    <script src="../js/main.js"></script>
+    <script src="../js/sidenav.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

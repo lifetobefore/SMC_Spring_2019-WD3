@@ -21,6 +21,8 @@
     <!-- favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico">
 
+    <!-- external css -->
+
     <title>Pencils</title>
   </head>
   <body>
@@ -42,10 +44,10 @@
               <div class="hamburger"></div>
             </div>
           </a>
-          <a href="#">Home</a>
-          <a href="#">Pencils</a>
-          <a href="#">Blog</a>
-          <a href="#">Contact</a>
+          <a class="active" href="index.html">Home</a>
+          <a href="pages/m2pencils.html">Pencils</a>
+          <a href="pages/blog.html">Blog</a>
+          <a href="pages/contact.html">Contact</a>
         </div>
     
         <!-- Use any element to open the sidenav -->
@@ -58,14 +60,163 @@
     
         <div id="shoppingCart" class="shopping-cart">
           <img src="images/nav/shoppingbag.svg">
-          <span class="cart-number">0</span>
+          <span class="displayCount cart-number">0</span>
         </div>      
-    </nav>
+      </nav>
+
+
+      <!-- lg screen menu -->
+      <div class="container container-fluid lg-navbar-container">
+
+        <!-- logo -->
+        <a class="lg-navbar-brand" href="index.html">
+            <img src="images/nav/logo.png" width="30px">
+            <span class="logo">Pencils</span>
+        </a>
+
+        <!-- pages links -->
+        <nav class="lg-navbar">
+          <a class="active" href="index.html">Home</a>
+          <a href="pages/m2pencils.html">Pencils</a>
+          <a href="pages/blog.html">Blog</a>
+          <a href="pages/contact.html">Contact</a>
+          <div class="line"></div>
+        </nav>
+
+        <!-- shopping cart -->
+        <a class="lg-shopping-cart" href="pages/checkout.html">
+          <div id="shoppingCart" class="shopping-cart">
+            <img src="images/nav/shoppingbag.svg">
+            <span class="displayCount cart-number">0</span>
+          </div>
+        </a>
+      </div>
+    
 
     <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
     <div id="superContainer">
-      
-    </div>
+      <!-- header-img -->
+      <div id="home-bg-img" class="overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+        <div class="col-md-5 p-lg-5 mx-auto my-5 bg-dark-gradient">
+          <h1 class="display-4 font-weight-normal text-white">Water Color Pencils</h1>
+          <p class="lead font-weight-normal text-white">Our new released water color pencils, buy it now for 20% off.</p>
+          <a class="btn btn-danger" href="#">Shop Now</a>
+        </div>
+        <div class="product-device shadow-sm d-none d-md-block"></div>
+        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+      </div>
+
+      <div class="jumbotron jumbotron-fluid bg-white">
+          <div class="container">
+            <p class="j-text text-center">Discover Mechanical Pencils</p>
+            <p class="lead-text text-center">Finding a new way of writing with our Mechanical Pencils.</p>
+          </div>
+        </div>
+
+      <!--products showcase-->
+      <div class="container mt-5">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img src="https://officedepot.scene7.com/is/image/officedepot/607555_p_pilot_dr_grip_ltd_mechanical_pencil?$OD%2DLarge$&wid=450&hei=450" height="350px">
+                <div class="card-body">
+                  <h5 class="card-text">Mechanical Pencil, 0.5 mm</h5>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="pages/m2pencils.html" class="btn btn-sm btn-outline-danger">View</a>
+                      <button type="button" class="countButton btn btn-sm btn-outline-danger">Add to Cart</button>
+                    </div>
+                    <small class="text-muted">7.99 $</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                  <img src="https://www.cultpens.com/imgs/products/cp/450x450_fitPad/LO50250-ZZZ~LOCLEN-L3-Mechanical-Pencil-Chrome_P1.jpg" height="350px">
+                  <div class="card-body">
+                    <h5 class="card-text">LOCLEN L3 Chrome, 0.5 mm </h5>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a class="btn btn-sm btn-outline-danger" href="pages/m1pencils.html">View</a>
+                        <button type="button" class="countButton btn btn-sm btn-outline-danger" >Add to Cart</button>
+                      </div>
+                      <small class="text-muted">69.99 $</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                  <div class="card mb-4 shadow-sm">
+                    <img src="https://cdn.shopify.com/s/files/1/0535/9633/products/pencilsilverfix_1024x1024.png?v=1475167377" height="350px">
+                    <div class="card-body">
+                      <h5 class="card-text">TWSBI Precision, 0.5mm</h5>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-danger">View</button>
+                          <button type="button" class="countButton btn btn-sm btn-outline-danger">Add to Cart</button>
+                        </div>
+                        <small class="text-muted">25.00 $</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+
+          <div class="jumbotron jumbotron-fluid bg-white">
+              <div class="container">
+                <p class="j-text text-center">Different Perspective</p>
+                <p class="lead-text text-center">Chosing different sizes of leads to metch your need.</p>
+              </div>
+            </div>
+    
+            <div id="leads-bg-img" class="overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+                <div class="col-md-5 p-lg-5 mx-auto my-5 bg-dark-gradient">
+                  <h1 class="display-4 font-weight-normal text-white">Sakura</h1>
+                  <p class="lead font-weight-normal text-white">0.3mm 0.5mm 0.7mm 0.9mm </p>
+                  <a class="btn btn-danger" href="pages/pencils.html">View More</a>
+                </div>
+                <div class="product-device shadow-sm d-none d-md-block"></div>
+                <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+              </div>
+
+              <footer class="pt-4 my-md-5 pt-md-5 border-top">
+                  <div class="row">
+                    <div class="col-12 col-md">
+                      <img class="mb-2" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
+                      <small class="d-block mb-3 text-muted">© 2017-2019</small>
+                    </div>
+                    <div class="col-6 col-md">
+                      <h5>Pencils</h5>
+                      <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Color Pencils</a></li>
+                        <li><a class="text-muted" href="#">Mechanical Pencil</a></li>
+                        <li><a class="text-muted" href="#">Mechanical Pencil Leads</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-6 col-md">
+                      <h5>Brands</h5>
+                      <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Rite</a></li>
+                        <li><a class="text-muted" href="#">YEpp</a></li>
+                        <li><a class="text-muted" href="#">Uni Kuru</a></li>
+                        <li><a class="text-muted" href="#">Bic</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-6 col-md">
+                      <h5>About</h5>
+                      <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Team</a></li>
+                        <li><a class="text-muted" href="#">Locations</a></li>
+                        <li><a class="text-muted" href="#">Privacy</a></li>
+                        <li><a class="text-muted" href="#">Terms</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </footer>
+        </div>
 
     <!-- Optional JavaScript -->
     <!-- Customized JavaScript -->

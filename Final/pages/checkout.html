@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Custom style -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Slab&display=swap" rel="stylesheet">
+
+    <!-- jQuery CND -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico">
+
+    <!-- external css -->
+
+    <title>Pencils</title>
+  </head>
+  <body>
+
+    <!-- navigation bar -->
+    <nav class="navbar">
+      
+      <!-- logo -->
+      <a class="navbar-brand" href="../index.html">
+        <img src="../images/nav/logo.png" width="30px">
+        <span class="logo">Pencils</span>
+      </a>
+      
+      <!-- navbar -->
+      <div id="mySidenav" class="sidenav">
+          <a class="closebtn" onclick="closeNav()">
+            <!-- toggle button-->
+            <div class="toggle">
+              <div class="hamburger"></div>
+            </div>
+          </a>
+          <a href="../index.html">Home</a>
+          <a class="active" href="../pages/pencils.html">Pencils</a>
+          <a href="../pages/blog.html">Blog</a>
+          <a href="../pages/contact.html">Contact</a>
+        </div>
+    
+        <!-- Use any element to open the sidenav -->
+        <span onclick="openNav()">
+          <!-- toggle button-->
+          <div class="toggle">
+            <div class="hamburger"></div>
+          </div>
+        </span>
+    
+        <div id="shoppingCart" class="shopping-cart">
+          <img src="../images/nav/shoppingbag.svg">
+          <span class="cart-number">0</span>
+        </div>      
+      </nav>
+
+
+      <!-- lg screen menu -->
+      <div class="container container-fluid lg-navbar-container">
+
+        <!-- logo -->
+        <a class="lg-navbar-brand" href="index.html">
+            <img src="../images/nav/logo.png" width="30px">
+            <span class="logo">Pencils</span>
+        </a>
+
+        <!-- pages links -->
+        <nav class="lg-navbar">
+          <a  href="../index.html">Home</a>
+          <a class="active" href="../pages/pencils.html">Pencils</a>
+          <a href="../pages/blog.html">Blog</a>
+          <a href="../pages/contact.html">Contact</a>
+          <div class="line"></div>
+        </nav>
+
+        <!-- shopping cart -->
+        <a class="lg-shopping-cart">
+          <div id="shoppingCart" class="shopping-cart">
+            <img src="../images/nav/shoppingbag.svg">
+            <span class="cart-number">0</span>
+          </div>
+        </a>
+      </div>
+    
+
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="superContainer">
+      <div class="jumbotron jumbotron-fluid bg-white">
+          <div class="container">
+            <p class="j-text text-center mt-5">Checkout</p>
+          </div>
+        </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 order-md-2 mb-4">
+              <h4 class="d-flex justify-content-between align-items-center mb-3">
+                  <img src="../images/MP/0 (1).jpg" height=" 150px">
+                  <p class="ml-3">LOCLEN L3 Chrome, 0.5 mm</p>
+                <span class="text-muted">Your cart</span>
+                <span class="badge badge-secondary badge-pill">3</span>
+              </h4>
+              <ul class="list-group mb-3">
+                <li class="list-group-item d-flex justify-content-between lh-condensed">
+                  <div>
+                    <h6 class="my-0">Product name</h6>
+                    <small class="text-muted">Brief description</small>
+                  </div>
+                  <span class="text-muted">$12</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-condensed">
+                  <div>
+                    <h6 class="my-0">Second product</h6>
+                    <small class="text-muted">Brief description</small>
+                  </div>
+                  <span class="text-muted">$8</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-condensed">
+                  <div>
+                    <h6 class="my-0">Third item</h6>
+                    <small class="text-muted">Brief description</small>
+                  </div>
+                  <span class="text-muted">$5</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between bg-light">
+                  <div class="text-success">
+                    <h6 class="my-0">Promo code</h6>
+                    <small>EXAMPLECODE</small>
+                  </div>
+                  <span class="text-success">-$5</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                  <span>Total (USD)</span>
+                  <strong>$20</strong>
+                </li>
+              </ul>
+        
+              <form class="card p-2">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Promo code">
+                  <div class="input-group-append">
+                    <button type="submit" class="btn btn-secondary">Redeem</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-8 order-md-1">
+              <h4 class="mb-3">Billing address</h4>
+              <form class="needs-validation" novalidate="">
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="firstName">First name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                    <div class="invalid-feedback">
+                      Valid first name is required.
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="lastName">Last name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                    <div class="invalid-feedback">
+                      Valid last name is required.
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="mb-3">
+                  <label for="username">Username</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">@</span>
+                    </div>
+                    <input type="text" class="form-control" id="username" placeholder="Username" required="">
+                    <div class="invalid-feedback" style="width: 100%;">
+                      Your username is required.
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="mb-3">
+                  <label for="email">Email <span class="text-muted">(Optional)</span></label>
+                  <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                  <div class="invalid-feedback">
+                    Please enter a valid email address for shipping updates.
+                  </div>
+                </div>
+        
+                <div class="mb-3">
+                  <label for="address">Address</label>
+                  <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+                  <div class="invalid-feedback">
+                    Please enter your shipping address.
+                  </div>
+                </div>
+        
+                <div class="mb-3">
+                  <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+                  <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                </div>
+        
+                <div class="row">
+                  <div class="col-md-5 mb-3">
+                    <label for="country">Country</label>
+                    <select class="custom-select d-block w-100" id="country" required="">
+                      <option value="">Choose...</option>
+                      <option>United States</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select a valid country.
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label for="state">State</label>
+                    <select class="custom-select d-block w-100" id="state" required="">
+                      <option value="">Choose...</option>
+                      <option>California</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please provide a valid state.
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label for="zip">Zip</label>
+                    <input type="text" class="form-control" id="zip" placeholder="" required="">
+                    <div class="invalid-feedback">
+                      Zip code required.
+                    </div>
+                  </div>
+                </div>
+                <hr class="mb-4">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="same-address">
+                  <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="save-info">
+                  <label class="custom-control-label" for="save-info">Save this information for next time</label>
+                </div>
+                <hr class="mb-4">
+        
+                <h4 class="mb-3">Payment</h4>
+        
+                <div class="d-block my-3">
+                  <div class="custom-control custom-radio">
+                    <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
+                    <label class="custom-control-label" for="credit">Credit card</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                    <label class="custom-control-label" for="debit">Debit card</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                    <label class="custom-control-label" for="paypal">PayPal</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="cc-name">Name on card</label>
+                    <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+                    <small class="text-muted">Full name as displayed on card</small>
+                    <div class="invalid-feedback">
+                      Name on card is required
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="cc-number">Credit card number</label>
+                    <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+                    <div class="invalid-feedback">
+                      Credit card number is required
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-3 mb-3">
+                    <label for="cc-expiration">Expiration</label>
+                    <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+                    <div class="invalid-feedback">
+                      Expiration date required
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label for="cc-cvv">CVV</label>
+                    <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+                    <div class="invalid-feedback">
+                      Security code required
+                    </div>
+                  </div>
+                </div>
+                <hr class="mb-4">
+                <button class="btn btn-danger btn-lg btn-block" type="submit">Continue to checkout</button>
+              </form>
+            </div>
+          </div>
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <div class="row">
+          <div class="col-12 col-md">
+            <img class="mb-2" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
+            <small class="d-block mb-3 text-muted">© 2017-2019</small>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Pencils</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Color Pencils</a></li>
+              <li><a class="text-muted" href="#">Mechanical Pencil</a></li>
+              <li><a class="text-muted" href="#">Mechanical Pencil Leads</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Brands</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Rite</a></li>
+              <li><a class="text-muted" href="#">YEpp</a></li>
+              <li><a class="text-muted" href="#">Uni Kuru</a></li>
+              <li><a class="text-muted" href="#">Bic</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Team</a></li>
+              <li><a class="text-muted" href="#">Locations</a></li>
+              <li><a class="text-muted" href="#">Privacy</a></li>
+              <li><a class="text-muted" href="#">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- Customized JavaScript -->
+    <script src="../js/main.js"></script>
+    <script src="../js/sidenav.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -10,6 +10,7 @@
 }
 
 .cart-number {
+    font-size: 13px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -17,11 +18,16 @@
     font-weight: bold;
 }
 
+.lg-shopping-cart{
+    position: absolute;
+    top:20px;
+    right: 25px;
+}
+
 /*Navigation bar*/
 .navbar {
     padding-bottom: 1em;
     background: #fff;
-    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.05);
 }
 
 .navbar li{
@@ -51,23 +57,68 @@
 }
 
 /*lg-screen style*/
-.la-nav {
-    margin-left: 50px;
+.lg-navbar {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.la-nav a {
+.lg-navbar a {
     color: #FEB2AD;
     text-align: center;
     text-decoration: none;
-    width: 60px;
-    padding: 1em 0;
+    width: 120px;
+    padding: 1em 0px;
     display: inline-block;
 }
 
+.lg-navbar a.active {
+    color: #F56358;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+    padding: 1em 0px;
+    display: inline-block;
+}
+
+.lg-navbar a:hover {
+    color: #F56358;
+}
+
+.lg-navbar a:nth-child(1):hover ~ .line {
+    background-color: #F56358;
+    transform: translateX(0px);
+    transition: all 0.4s ease-in-out;
+}
+
+.lg-navbar a:nth-child(2):hover ~ .line {
+    background-color: #F56358;
+    transform: translateX(125px);
+    transition: all 0.4s ease-in-out;
+}
+
+.lg-navbar a:nth-child(3):hover ~ .line {
+    background-color: #F56358;
+    transform: translateX(250px);
+    transition: all 0.4s ease-in-out;
+}
+
+.lg-navbar a:nth-child(4):hover ~ .line {
+    background-color: #F56358;
+    transform: translateX(375px);
+    transition: all 0.4s ease-in-out;
+}
+
+.lg-navbar-brand {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+
 .line {
-    width: 60px;
+    width: 120px;
     height: 3px;
-    background-color: #FEB2AD;
 }
 
 /*toggle hamburger*/
@@ -174,6 +225,12 @@
     .sidenav a {font-size: 18px;}
   }
 
-  /*@media screen and (max-width: 2000px) and (min-width: 769px) {
-    
-  }*/
+  @media screen and (max-width: 2000px) and (min-width: 769px) {
+    .navbar {display: none;}
+    .lg-navbar {display: block;}
+  }
+
+  @media screen and (max-width: 768px) {
+    .navbar {display: "";}
+    .lg-navbar-container {display: none;}
+  }

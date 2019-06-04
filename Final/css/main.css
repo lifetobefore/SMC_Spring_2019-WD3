@@ -1,3 +1,56 @@
-body{
-    background-color: aqua;
+* {
+    font-family: 'Roboto', sans-serif;
 }
+
+h3{
+    color:  #F56358;
+}
+
+#home-bg-img {
+    background-image: url("https://cdn.shopify.com/s/files/1/0993/0368/products/pop-pencils_800x.jpg?v=1510682196");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-position:50% 10%;
+}
+
+#leads-bg-img {
+    background-image: url("../images/leads/home-lead.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-position:50% 25%;
+}
+
+.bg-dark-gradient{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.j-text {
+    color:#FEB2AD;
+    font-size: 60px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.image-w{
+    width: 500px;
+}
+
+form {
+    color:  #F56358;
+}
+
+@media screen and (max-width: 450px) {
+    .j-text{
+        font-size: 40px;
+    }
+    .card img{
+        height: 250px;        
+    }
+    .display-4 ,.lead {
+        display: none;
+    }
+    .bg-dark-gradient{
+        background-color: rgba(0,0,0,0);
+    }
+  }
