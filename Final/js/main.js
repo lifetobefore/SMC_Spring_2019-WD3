@@ -20,8 +20,8 @@ button.onclick = function(){
   display.innerHTML = count;
 }
 
-var $form = $("#myform");
-var $submitbutton = $("#submitbutton");
+var $form = $(".myform");
+var $submitbutton = $(".submitbutton");
 
 $form.on("blur", "input", () => {
   if ($form.valid()) {
